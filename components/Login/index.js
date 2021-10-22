@@ -23,7 +23,7 @@ class Login extends Component {
   onSubmitSuccess = jwtToken => {
     Cookies.set(
       'jwt_token',
-      {jwtToken},
+      jwtToken,
       {
         expires: 30,
       },
